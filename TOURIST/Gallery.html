@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Lesotho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+</head>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+<body>
+
+   <nav class="navbar  navbar-expand-lg  ">
+         <div class="container-fluid  ">
+            <div class="ms-auto d-flex gap-3">
+            
+            <a class="nav-link" href="index.html">Home</a>
+             <a class="nav-link" href="About.html">About</a>
+             <a class="nav-link" href="Service.html">Service</a>
+            
+             <a  class="nav-link active" href="Gallery.html">Gallery</a>
+                 <a class="nav-link" href="contact.html">Contacts</a>
+                 
+
+             </div>
+             </div>
+    </nav>
+
+
+    
+<div class="container">
+
+  
+  <div id="activityDetails">
+    <h2> Explore the beauty Lesotho</h2>
+    <p>Look  at the pictures of people who have been here and the beauty of Lesotho</p>
+    <img src="hat.jpg" width="300px" height="300px">
+    <img src="horse.jpg" width="300px" height="300px">
+    <img src="board.jpg" width="300px" height="300px">
+    <img src="g.jpg" width="300px" height="300px">
+    <img src="b.jpg" width="300px" height="300px">
+    <img src="c.jpg" width="300px" height="300px">
+    <img src="d.jpg" width="300px" height="300px">
+    <img src="e.jpg" width="300px" height="300px">
+    
+
+
+
+    
+    <hr>
+    <h2>Picture Gallery</h2>
+<p>Discover the beauty of Lesotho — mountains, culture, and adventure</p>
+
+<img id="mainImage" src="a.jpg" onclick="openModal()">
+<br><br>
+<button class="btn-prev" onclick="prevImage()"> Previous</button>
+<span style="margin: 0 15px;">Photo 1 of 12</span>
+<button class="btn-next" onclick="nextImage()">Next </button>
+<br><br>
+
+<h3 style="text-align:left;">Browse Photos</h3>
+<div class="gallery-row">
+  <div class="thumb-card" onclick="showImage('a.jpg')">
+    <img src="a.jpg">
+    
+  </div>
+  <div class="thumb-card" onclick="showImage('b.jpg')">
+    <img src="b.jpg">
+    
+  </div>
+  <div class="thumb-card" onclick="showImage('c.jpg')">
+    <img src="c.jpg">
+    
+  </div>
+  <div class="thumb-card" onclick="showImage('d.jpg')">
+    <img src="d.jpg">
+    
+  </div>
+  <div class="thumb-card" onclick="showImage('maliba.jpg')">
+    <img src="maliba.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('bedding.jpg')">
+    <img src="bedding.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('lehloa.jpg')">
+    <img src="lehloa.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('male.jpg')">
+    <img src="male.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('f.jpg')">
+    <img src="f.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('g.jpg')">
+    <img src="g.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('h.jpg')">
+    <img src="h.jpg">
+  </div>
+  <div class="thumb-card" onclick="showImage('i.jpg')">
+    <img src="i.jpg">
+  </div>
+</div>
+ 
+  
+
+
+<div id="myModal" >
+  <span onclick="closeModal()" style="color:white; font-size:40px; cursor:pointer; position:absolute; top:10px; right:30px;">&times; Close</span><br>
+  <img id="modalImage" src="male.jpg" width="700" style="border-radius:10px;">
+  <br><br>
+  <button onclick="prevImage()">Previous</button>
+  <button onclick="nextImage()">Next </button>
+</div>
+
+<script>
+
+
+
+var images = ["a.jpg","b.jpg","c.jpg","c.jpg","maliba.jpg","lehloa.jpg","male.jpg"];
+var current = 0;
+
+function showImage(src) {
+  document.getElementById("mainImage").src = src;
+  for (var i = 0; i < images.length; i++) {
+    if (images[i] == src) { current = i; }
+  }
+}
+function nextImage() {
+  current = current + 1;
+  if (current >= images.length) { current = 0; }
+  document.getElementById("mainImage").src = images[current];
+  document.getElementById("modalImage").src = images[current];
+}
+function prevImage() {
+  current = current - 1;
+  if (current < 0) { current = images.length - 1; }
+  document.getElementById("mainImage").src = images[current];
+  document.getElementById("modalImage").src = images[current];
+}
+function openModal() {
+  document.getElementById("modalImage").src = document.getElementById("mainImage").src;
+  document.getElementById("myModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+
+
+</script>
+
+<footer>More Images| More fantacy</footer>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+body { 
+  font-family: Arial;
+text-align: center;
+ background: white;
+  }
+
+  header{
+    background-image: url(hat.jpg);
+    background-size: cover;
+      background-repeat: no-repeat;
+  }
+h1 { 
+  color: red;
+  text-align: center; 
+}
+h2 { color: darkred;
+ margin-top: 40px; }
+
+.form1 { 
+  border: 1px solid black;
+   padding: 20px;
+    width: 600px; margin: auto;
+     text-align: left; 
+     border-radius: 10px; 
+     margin-left: 90px;
+     margin-top: 30px;
+   }
+   .form2{
+     border: 1px solid black;
+   padding: 20px;
+    width: 600px; margin: auto;
+     text-align: left; 
+     border-radius: 10px; 
+     margin-left: 800px;
+     margin-top: -770px;
+   }
+input, textarea { 
+  width: 95%;
+   padding: 8px;
+    margin-top: 3px;
+     }
+button {
+ background: red;
+ color: white;
+  padding: 10px 20px; 
+  border: none
+  ; cursor: pointer;
+   border-radius: 5px;
+    }
+button:hover {
+ background: darkred;
+  }
+
+  @media (max-width: 900px) {
+
+  }
+  @media (max-width: 900px) {
+    header{
+      width: 100%;
+
+    }
+    .form1{
+      width: 100%;
+    }
+
+    .form2{
+      margin-top: 600px;
+      margin-left: -300px;
+    }
+
+
+  }
+
+
+}

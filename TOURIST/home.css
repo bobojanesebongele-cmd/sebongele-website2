@@ -1,0 +1,87 @@
+h1{
+			font-size:80px;
+    font-weight: italic;
+    text-align: center;
+    color: white;
+    margin-top: 250px;
+}
+h2{
+	font-size: 35px;
+	font-style: italic;
+	color: lightblue;
+	margin-left: 200px;
+	margin-top: 10px;
+}
+			
+		body{
+		
+			background-image: url("mount.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh;
+		
+			 
+            overflow:hidden;
+
+             border:2px solid ;
+
+    
+
+			.one{
+				justify-content: flex-end;
+				  font-size:20px;
+                 
+                 margin-top: -370px;
+               
+
+             }
+             .logo{
+             	margin-top: -50px;
+             	background: darkblue;
+             	
+
+             }
+             .footer{
+             	background: darkblue;
+             	color: white;
+             	margin-top: 550px;
+             	height: 50px;
+             	text-align: center;
+
+
+             }
+             
+
+	    
+
+		
+		@media(max-width: 600px){
+			h1{
+				font-size: 23px;
+
+			}
+			h2{
+				font-size: 20px;
+				margin-left: -10px;
+				text-align: center;
+			}
+
+
+			.logo{
+				margin-top: -40px;
+				
+
+			}
+			 .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-top: -200px;
+        font-size: 14px;
+    }
+
+	
+ 
+
+	}

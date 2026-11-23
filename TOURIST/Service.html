@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explore Lesotho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+</head>
+<link rel="stylesheet" type="text/css" href="service.css">
+<body>
+
+   <nav class="navbar  navbar-expand-lg  navbar-light">
+         <div class="container-fluid  ">
+            <div class="ms-auto d-flex gap-3">
+            
+            <a class="nav-link" href="index.html">Home</a>
+             <a class="nav-link" href="About.html">About</a>
+             <a class="nav-link" href="Service.html">Service</a>
+            
+             <a  class="nav-link active" href="Gallery.html">Gallery</a>
+                 <a class="nav-link" href="contact.html">Contacts</a>
+                 
+             </div>
+
+
+             </div>
+
+    </nav>
+
+
+
+<nav>
+  
+  <div class="dropdown">
+    <a href="#">Explore</a>
+    <div class="dropdown-content">
+      <a href="#" onclick="showActivity('accommodation')">Accommodation</a>
+      
+      <a href="#" onclick="showActivity('Hiking')">Hiking & Mountain Climbing</a>
+      <a href="#" onclick="showActivity('Horse Riding')">Pony Trekking & Horse Riding</a>
+      <a href="#" onclick="showActivity('Culture')">Basotho Cultural Tours</a>
+      <a href="#" onclick="showActivity('Camping')">Camping & Outdoor Adventures</a>
+      <a href="#" onclick="showActivity('Skiing')">Skiing & Snow Activities</a>
+      <a href="#" onclick="showActivity('Waterfall')">Waterfall Tours</a>
+      <a href="#" onclick="showActivity('Village')">Village Tours</a>
+    </div>
+  </div>
+  
+  
+</nav>
+
+<div class="container">
+
+  <div id="activityDetails">
+    <h2>Welcome to Explore Lesotho</h2>
+    <p>Select an activity from the Service menu to learn more.</p>
+    <img src="thaba.jpg" width="500">
+  </div>
+
+  <div id="accommodation" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Accommodation in Madiba lodge</h2>
+    <img src="bedding.jpg" width="400px" height="400px">
+    <p class="b"> Welcome to our comfortable accommodation in the heart of Lesotho. Whether you are travelling alone, with family, or with friends, we have the perfect place for you to rest after a long day of exploring. Our lodges and guest houses are located in Maseru, Malealea and Semonkong, all with beautiful mountain views. Each room is clean, warm and fully furnished with a comfortable bed, hot shower, free Wi-Fi and breakfast in the morning. You will enjoy real Basotho hospitality from our friendly staff who are always ready to help you. From our accommodation, you can easily visit all the famous tourist attractions in Lesotho. Book your stay with us and enjoy peace, comfort and the beauty of the Kingdom in the Sky.
+    </p>
+
+
+    <div class="e">
+    <p><b>Price:</b> LSL 350 - LSL 1200 / night</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date1" style="padding:8px; width:70%; margin-bottom:5px;">
+  <input type="number" id="people1" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:70%; margin-bottom:5px;">
+  <button onclick="checkOne('Accommodation','date1','people1','result1')" style="width:70%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result1" style="margin-top:50pxpx; text-align:center;"></div>
+</div>
+  </div>
+  </div>
+
+  <div id="Hiking" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Hiking & Mountain Climbing</h2>
+    <img src="f.jpg" width="300px" height="400px">
+    <p class="b">Lesotho is known as the Kingdom in the Sky because the whole country is high up in the mountains. Our hiking tour takes you to Thabana-Ntlenyana, which is the highest peak in Southern Africa at 3,482 metres above sea level. It is a once in a lifetime experience for anyone who loves nature and adventure. Our experienced guides will walk with you from the start to the end, showing you the best routes, beautiful waterfalls, and amazing views. You do not need to be an expert to join us. We have easy hikes for beginners and challenging climbs for experienced hikers. Come and enjoy fresh mountain air, take beautiful photos and create memories that will last forever.
+</p>
+
+<div class="e">
+<p><b>Price:</b> LSL 150 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date2" style="padding:8px; width:70%; margin-bottom:5px;">
+  <input type="number" id="people2" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:70%; margin-bottom:5px;">
+  <button onclick="checkOne('Hiking & Mountain Climbing','date2','people2','result2')" style="width:70%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result2" style="margin-top:40px; text-align:center;">
+  </div>
+</div>
+</div>
+
+
+  </div>
+
+  <div id="Horse Riding" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Pony Trekking & Horse Riding</h2>
+    <img src="horse.jpg" width="400px" height="400px">
+    <p class="b"> The Basotho Pony is one of the most famous symbols of Lesotho. For many years, Basotho people have used these strong and brave ponies to travel through the mountains. Our pony trekking tour gives you a chance to ride these ponies just like a real Mosotho.You will ride through beautiful mountains, cross rivers and pass through small villages while our guides tell you stories about Lesotho. You do not need any riding experience because our ponies are calm and our guides will help you. This is the best way to see Lesotho because cars cannot go where ponies can go. It is fun, safe and perfect for the whole family.</p>
+
+    <div class="e">
+     <p><b>Price:</b> LSL 250 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date3" style="padding:8px; width:70%; margin-bottom:5px;">
+  <input type="number" id="people3" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:70%; margin-bottom:5px;">
+  <button onclick="checkOne('Pony Trekking & Horse Riding','date3','people3','result3')" style="width:70%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result3" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+  
+  </div>
+
+  <div id="Culture" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Basotho Cultural Tours</h2>
+    <img src="g.jpg" width="400px" height="400px">
+    <p class="b"> Lesotho has a rich and beautiful culture that has been kept alive for many years. Our Basotho Cultural Tour takes you deep into our culture so that you can see, taste and feel what it means to be a Mosotho. You will visit Ha Kome Caves and Thaba-Bosiu, the birthplace of the Basotho nation. During the tour you will wear the famous Basotho blanket, see the Mokorotlo hat, listen to traditional music, watch cultural dancing and taste traditional food like papa, moroho and traditional beer. Our cultural guides will teach you about the history of King Moshoeshoe I and how Basotho people live today. This tour is perfect for anyone who wants to truly understand Lesotho.
+</p>
+
+<div class="e">
+ <p><b>Price:</b> LSL 100 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date4" style="padding:8px; width:70%; margin-bottom:5px;">
+  <input type="number" id="people4" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:70%; margin-bottom:5px;">
+  <button onclick="checkOne('Basotho Cultural Tours','date4','people4','result4')" style="width:70%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result4" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+  </div>
+
+
+  <div id="Camping" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Camping & Outdoor Adventures</h2>
+    <img src="e.jpg" width="400px" height="400px">
+    <p class="b"> If you love nature and adventure, our camping tour is for you. We take you to Sehlabathebe National Park, one of the most beautiful places in Lesotho. Here you will sleep in a tent under the stars, far away from the noise of the city.In the evening we make a bonfire, enjoy a braai and tell stories while looking at the stars. In the morning you will wake up to fresh mountain air, beautiful sunrise and a delicious breakfast. Our team provides everything you need - tents, sleeping bags, food and a guide. All you need to bring is your adventurous spirit. Come and experience the true beauty of Lesotho's outdoors.
+</p>
+
+
+<div class="e">
+<p><b>Price:</b> LSL 350 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date5" style="padding:8px; width:70%; margin-bottom:5px;">
+  <input type="number" id="people5" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:70%; margin-bottom:5px;">
+  <button onclick="checkOne('Camping & Outdoor Adventures','date5','people5','result5')" style="width:70%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result5" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+  </div>
+
+  <div id="Skiing" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Skiing & Snow Activities</h2>
+    <img src="lehloa.jpg" width="400px" height="400px">
+    <p class="b"> Did you know that you can see snow in Africa? Lesotho is the only country in Southern Africa where you can enjoy skiing! Our skiing tour takes you to Afriski Mountain Resort in Oxbow, the only ski resort in Lesotho. The ski season is from June to August every year. Whether you have never seen snow before or you are an experienced skier, this tour is for you. You can enjoy skiing, snowboarding, building a snowman and playing in the snow. We provide all the ski gear and an instructor to teach you. Bring your family and friends and come and enjoy snow in the Kingdom in the Sky.
+</p>
+
+
+<div class="e">
+<p><b>Price:</b> LSL 400 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date6" style="padding:8px; width:100%; margin-bottom:5px;">
+  <input type="number" id="people6" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:100%; margin-bottom:5px;">
+  <button onclick="checkOne('Skiing & Snow Activities','date6','people6','result6')" style="width:100%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result6" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div id="Waterfall" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Waterfall Tours</h2>
+    <img src="b.jpg" width="400px" height="400px">
+    <p class="b"> Lesotho is home to some of the most beautiful waterfalls in Africa. Our waterfall tour takes you to Maletsunyane Falls in Semonkong, which is 192 metres high and one of the highest waterfalls in Africa. The waterfall is so powerful and beautiful that you will never forget it. During the tour you will hike to the top of the waterfall, take beautiful photos and even see the longest abseil in the world. Our guides will tell you the history of the waterfall and the village of Semonkong. If you love nature and photography, this tour is a must. Come and see the power and beauty of Lesotho's water.
+</p>
+
+
+<div class="e">
+<p>Price: LSL 200 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date7" style="padding:8px; width:100%; margin-bottom:5px;">
+  <input type="number" id="people7" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:100%; margin-bottom:5px;">
+  <button onclick="checkOne('Waterfall Tours','date7','people7','result7')" style="width:100%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result7" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+  </div>
+
+  
+
+  <div id="Village" style="display:block;">
+    <div class="container1">
+    <h2 class="a">Village Tours</h2>
+    <img src="matlo.jpg" width="400px" height="400px">
+    <p class="b"> The best way to understand Lesotho is to visit a real Basotho village. Our village tour takes you to rural villages around Maseru where you will meet friendly local people and see how they live their daily lives. You will visit a real Basotho home, see how traditional bread and beer are made, visit a local school and walk through the village with our local guide. The villagers will welcome you with warm smiles and teach you Sesotho words. This tour is not just a visit - it is a chance to make new friends and learn about the true heart of Lesotho.
+</p>
+<div class="e">
+ <p>Price: LSL 80 / person</p>
+  <h4>Check Availability</h4>
+  <input type="date" id="date8" style="padding:8px; width:100%; margin-bottom:5px;">
+  <input type="number" id="people8" value="2" min="1" max="20" placeholder="How many people?" style="padding:8px; width:100%; margin-bottom:5px;">
+  <button onclick="checkOne('Village Tours','date8','people8','result8')" style="width:100%; padding:10px; background:green; color:white; border:none;">Check Availability</button>
+  <div id="result8" style="margin-top:10px; text-align:center;"></div>
+</div>
+</div>
+  </div>
+
+</div>
+
+<footer>Enjoy the beauty of Lesotho. <br>For more details got to the contact page<br>/contact us here:57305382</footer>
+
+<script>
+function showActivity(id) {
+  document.getElementById("activityDetails").style.display = "none";
+  document.getElementById("accommodation").style.display = "none";
+ 
+  document.getElementById("Hiking").style.display = "none";
+  document.getElementById("Horse Riding").style.display = "none";
+  document.getElementById("Culture").style.display = "none";
+  document.getElementById("Camping").style.display = "none";
+  document.getElementById("Skiing").style.display = "none";
+  
+  document.getElementById("Waterfall").style.display = "none";
+  
+  document.getElementById("Village").style.display = "none";
+
+  document.getElementById(id).style.display = "block";
+}
+
+
+
+
+function checkOne(service, dateId, peopleId, resultId) {
+  let date = document.getElementById(dateId).value;
+  let people = document.getElementById(peopleId).value;
+  let result = document.getElementById(resultId);
+  if (!date) { alert("Please choose a date"); return; }
+  if (Math.random() > 0.3) {
+    result.innerHTML = "<b style='color:green;'> AVAILABLE! BOOK NOW</b><br>" + service + " is available on " + date + " for " + people + " people.";
+  } else {
+    result.innerHTML = "<b style='color:red;'> FULLY BOOKED!</b><br>" + service + " is fully booked on " + date + ". Please try another date.";
+  }
+}
+
+
+
+</script>
+
+
+</body>
+</html>

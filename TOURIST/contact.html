@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Explore Lesotho</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<link rel="stylesheet" type="text/css" href="contact.css">
+<body>
+
+<header>
+   <nav class="navbar  navbar-expand-lg  ">
+         <div class="container-fluid  ">
+            <div class="ms-auto d-flex gap-3">
+            
+            <a class="nav-link" href="index.html">Home</a>
+             <a class="nav-link" href="About.html">About</a>
+             <a class="nav-link" href="Service.html">Service</a>
+            
+             <a  class="nav-link active" href="Gallery.html">Gallery</a>
+                 <a class="nav-link" href="contact.html">Contacts</a>
+                 
+             </div>
+             </div>
+    </nav>
+
+
+
+<h1>Visit in Lesotho</h1>
+<p>Discover the beauty of Lesotho — mountains, culture, and adventure</p>
+<p>Get registered and book your space</p>
+</header>
+
+
+<div class="form1">
+<h2>1. Registration Form</h2>
+<p>Register to join our Lesotho tours</p>
+<form onsubmit="return validateRegister()">
+  Full Name: <br>
+  <input type="text" id="regName" placeholder="Enter your full name" required><br><br>
+  Email: <br>
+  <input type="email" id="regEmail" placeholder="example@gmail.com" required><br><br>
+  Phone: <br>
+  <input type="number" id="regPhone" placeholder="e.g. 58881234" required><br><br>
+  Gender: <br>
+  <input type="radio" name="gender" value="Male" required style="width:auto;"> Male
+  <input type="radio" name="gender" value="Female" style="width:auto;"> Female <br><br>
+  Password: <br>
+  <input type="password" id="regPass" placeholder="At least 6 characters" required><br><br>
+  Confirm Password: <br>
+  <input type="password" id="regConfirm" placeholder="Type password again" required><br><br>
+  <button type="submit">Register</button>
+  <p id="regMessage" style="color:green; font-weight:bold;"></p>
+</form>
+</div>
+
+<div class="form2">
+<h2>2. Contact Form</h2>
+<p>Ask us anything about Lesotho</p>
+<form onsubmit="return validateContact()">
+  Name: <br>
+  <input type="text" id="contactName" placeholder="Your name" required><br><br>
+  Email: <br>
+  <input type="email" id="contactEmail" placeholder="Your email" required><br><br>
+  Subject: <br>
+  <input type="text" id="contactSubject" placeholder="e.g. Booking question" required><br><br>
+  Message: <br>
+  <textarea id="contactMessage" rows="4" placeholder="Write your message here..." required></textarea><br><br>
+  <button type="submit">Send Message</button>
+  <p id="contactMessageResult" style="color:green; font-weight:bold;"></p>
+</form>
+</div>
+
+<br>
+<p>contact us:57305382 for more information| visit our websites Explore Lesotho | Maseru, Lesotho</p>
+
+<script>
+
+
+function validateRegister() {
+  var name = document.getElementById("regName").value;
+  var pass = document.getElementById("regPass").value;
+  var confirm = document.getElementById("regConfirm").value;
+  if (pass.length < 6) { alert("Password must be at least 6 characters!"); return false; }
+  if (pass != confirm) { alert("Passwords do not match!"); return false; }
+  document.getElementById("regMessage").innerHTML = "Thank you " + name + "! Registration successful. Welcome to Explore Lesotho!";
+  return false;
+}
+function validateContact() {
+  var name = document.getElementById("contactName").value;
+  document.getElementById("contactMessageResult").innerHTML = "Thank you " + name + "! Your message has been sent successfully.";
+  return false;
+}
+
+
+
+</script>
+
+</body>
+</html>

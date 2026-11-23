@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<form>
+
+		<label for="name">Fullnames</label>
+		<input type="text" id="name" >
+		<label for="email">Email Adress</label>
+		<input type="email" id="email">
+		<button type="button" class="submit" onclick="submitbutton()">Submit now</button>
+		
+
+		</form>
+
+		<!-- output area -->
+<p id="Fullnames"></p>
+<p id="emailOutput"></p>
+<p id="message"></p>
+<p id="num"></p>
+
+
+<script>
+	function submitbutton() {
+//get values from input fields
+
+let name =document.getElementById("name").value;
+let email =document.getElementById("email").value;
+const number= 23;
+
+//display in the paragraphs
+document.getElementById("Fullnames").innerHTML =   name;
+
+document.getElementById("message").innerHTML = "registration succeded";
+document.getElementById("num").innerHTML = number;
+}
+
+</script>
+
+</body>
+</html>

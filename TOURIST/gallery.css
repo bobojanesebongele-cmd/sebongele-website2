@@ -1,0 +1,145 @@
+body { 
+    font-family: Arial;
+     margin: 0;
+      padding: 0;
+       background: lightgray; 
+     }
+
+  nav {
+   background-color: brown;
+    padding: 15px 30px;
+     display: flex;
+      justify-content: space-between;
+       align-items: center;
+        }
+  nav a { color: white;
+   text-decoration: none;
+    margin-right: 20px;
+     font-size: 18px;
+      font-weight: bold;
+       }
+
+  .logo { font-size: 22px;
+   color: white;
+    font-weight: bold;
+     }
+
+  .dropdown {
+   position: relative; 
+   display: inline-block;
+    }
+
+  .dropdown-content {
+    display: none;
+     position: absolute;
+      background-color: white;
+    min-width: 280px; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000; 
+    border-radius: 5px;
+     top: 100%; left: 0;
+  }
+  .dropdown-content a {
+   color: black !important;
+    padding: 12px 16px;
+     text-decoration: none;
+      display: block;
+       font-weight: normal;
+        }
+
+  .dropdown-content a:hover {
+   background-color: ghostwhite;
+    }
+  .dropdown:hover .dropdown-content {
+   display: block;
+    }
+
+  .container {
+   max-width: 1450px;
+    margin: 0 auto; padding: 20px;
+     background: white
+     ; text-align: center; }
+  h2 { 
+    color: darkblue;
+     font-size: 32px;
+      }
+
+  
+  #mainImage {
+    width: 900px; 
+    height: 380px;
+     object-fit: cover;
+
+    border-radius: 10px;
+     cursor: pointer;
+  }
+
+  .btn-prev {
+    padding: 10px 25px;
+     border-radius: 20px;
+      border: 2px solid darkblue;
+    background: white;
+     color: darkblue; 
+     font-weight: bold;
+      cursor: pointer;
+  }
+  .btn-next {
+    padding: 10px 25px;
+     border-radius: 20px;
+      border: none;
+    background: darkblue; 
+    color: white;
+     font-weight: bold;
+      cursor: pointer;
+  }
+
+  
+  .gallery-row { 
+    display: flex;
+     justify-content: center;
+      gap: 10px;
+       flex-wrap: wrap;
+        }
+  .thumb-card {
+
+    background: floralwhite; 
+    border-radius: 10px;
+     padding: 8px;
+    width: 200px;
+     text-align:
+      center; cursor: pointer;
+  }
+  .thumb-card img {
+   width: 200px;
+    height: 130px;
+     object-fit: cover;
+      border-radius: 8px;
+       }
+  .thumb-card p {
+   margin: 5px 0 0 0; 
+   color: darkblue; font-size: 14px;
+    }
+  .thumb-card:hover {
+   background: floralwhite; }
+
+   #myModal{ 
+    display:none;
+     position:fixed; 
+     top:0;
+    left:0; 
+     width:100%;
+      height:100%; 
+      background:rgba(0,0,0,0.85);
+      text-align:center;
+      z-index:2000;
+       padding-top:50px;">
+
+
+  
+  footer {
+   background: brown;
+   color: white; 
+   text-align: center;
+    padding: 15px;
+     }
+   }
